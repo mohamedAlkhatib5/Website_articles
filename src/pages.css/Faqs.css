@@ -1,0 +1,80 @@
+    .accordion-button:not(.collapsed) {
+        color: white;
+        background-color: black;
+    }
+    
+    .accordion-button::after {
+        content: "↓";
+        background-image: none;
+        font-size: 21px;
+    }
+    
+    .accordion-button:not(.collapsed)::after {
+        background-image: none;
+    }
+    
+    .accordion-body {
+        background-color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-pills .nav-link {
+        /* color: white; */
+        border: 1px solid rgba(128, 128, 128, 0.122);
+        border-radius: 0px;
+        color: black;
+    }
+    
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link:hover {
+        color: white;
+        background-color: #FF6636;
+    }
+    
+    .nav-pills {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cont {
+        position: relative;
+    }
+    
+    .nav-faq {
+        position: sticky;
+        top: 60px;
+        z-index: 99;
+        background-color: white;
+        padding-block: 10px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+    }
+    
+    @media (max-width:762px) {
+        .nav-pills {
+            display: flex;
+            flex-direction: row;
+            overflow-y: hidden;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            position: sticky!important;
+            top: 0;
+            z-index: 99;
+            padding-bottom: 20px;
+        }
+        .nav-pills a {
+            height: 100%;
+            padding-inline: 30px;
+        }
+        .nav-faq {
+            flex-direction: row !important;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            background-color: white;
+        }
+        .nav-faq .nav-link {
+            flex: 0 0 auto;
+            padding-inline: 30px;
+        }
+    }

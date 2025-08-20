@@ -1,0 +1,54 @@
+    ul li {
+        margin-block: 10px;
+        list-style: none;
+    }
+    
+    ul li a span {
+        margin-inline-start: 5px;
+        /* display: none; */
+        color: white;
+        font-size: 20px;
+        opacity: 0;
+    }
+    
+    ul li a {
+        padding-bottom: 5px;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: gray;
+    }
+    
+    ul li a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #FF6636;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    ul li a:hover::after {
+        width: 100%;
+    }
+    
+    ul li a:hover span {
+        opacity: 1;
+        color: #FF6636;
+    }
+    
+    .icons a {
+        background: #363B4766;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .icons a:hover {
+        background: #FF6636;
+    }
+    
+    button {
+        background-color: #363B4766;
+    }

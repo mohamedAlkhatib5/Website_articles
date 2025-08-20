@@ -1,0 +1,177 @@
+        .mynav a {
+            text-decoration: none;
+            border-top: 3px white;
+            color: gray;
+            margin-inline: 8px;
+            padding-top: 5px;
+            position: relative;
+        }
+        
+        .mynav {
+            z-index: 10000;
+        }
+        
+        .offcanvas-body {
+            background-color: #1D2026;
+        }
+        
+        .icons-nav {
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .navbar {
+            position: relative;
+        }
+        
+        .icons-nav a {
+            margin-inline: 8px;
+            color: white;
+        }
+        
+        .nav-link-custom:hover {
+            color: #ffffff;
+            transform: translateY(0px);
+        }
+        
+        .nav-link-custom::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 1.2px;
+            background-color: #FF6636;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        .nav-link-custom:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link-custom.active {
+            color: #ffffff !important;
+        }
+        
+        .nav-link-custom.active::after {
+            width: 100%;
+        }
+        
+        .navbar-toggler {
+            background-color: white;
+            /* margin-inline-start: 90%; */
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        
+        .navbar-toggler-icon {
+            color: white !important;
+        }
+        
+        .mylogo {
+            display: none;
+        }
+        
+        .logo-button {
+            display: flex;
+            justify-content: space-between !important;
+        }
+        
+        .icons-nav a {
+            transition: 0.1s ease-in-out;
+        }
+        
+        .icons-nav a:hover {
+            color: #FF6636;
+        }
+        /* *********************************************************  */
+        
+        .navbar-toggler {
+            background-color: #1D2026 !important;
+            border: none;
+        }
+        
+        .navbar-toggler-icon {
+            color: white;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            background-size: 40px;
+        }
+        /* *********************************************************  */
+        
+        @media (max-width: 1000px) {
+            .icons-nav {
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 50px;
+                right: 35%;
+            }
+            .mynav a {
+                margin-block: 5px;
+                border: none;
+                width: 100%;
+                text-align: start;
+                border-bottom: 0.1px solid rgba(128, 128, 128, 0.104);
+                padding-bottom: 3px;
+            }
+            .nav-link-custom::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 1.2px;
+                background-color: #FF6636;
+                transition: width 0.3s ease-in-out;
+            }
+            /* .mynav a:hover {
+                border-color: #FF6636;
+            }
+            .nav-link-custom:hover::after {
+                width: 0%;
+            }
+            .nav-link-custom.active::after {
+                width: 0%;
+            }
+            .nav-link-custom.active:hover::after {
+                width: 0%;
+            } */
+            .mynav a:last-child {
+                border: none;
+                text-align: center;
+            }
+            .navbar-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                /* z-index: 100000; */
+                padding-top: 20px;
+            }
+            a.active {
+                border: none;
+            }
+            .mylogo {
+                display: flex;
+                position: absolute;
+                top: 5px;
+                left: 10px;
+            }
+            .navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 100000;
+                /* height: 100px; */
+                background-color: #1D2026;
+                padding-block: 30px;
+            }
+            .navbar-collapse .collapse .show {
+                background-color: #1D2026;
+            }
+        }

@@ -1,0 +1,46 @@
+ a {
+     text-decoration: none;
+ }
+ 
+ .link-header a {
+     text-decoration: none;
+ }
+ 
+ .link-header a:hover {
+     text-decoration: underline;
+ }
+ 
+ .link-join {
+     transition: 0.5s ease;
+     background-color: #FF6636;
+     color: white;
+ }
+ 
+ .link-join:hover {
+     color: #FF6636;
+     background-color: transparent;
+     border: 1px solid #FF6636;
+ }
+ 
+ .triangle-down {
+     width: 0;
+     height: 0;
+     border-left: 15px solid transparent;
+     border-right: 15px solid transparent;
+     border-top: 15px solid #F5F7FA !important;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+ 
+ .message {
+     transition: 0.3s;
+ }
+ 
+ .message:hover {
+     transform: translateY(-10px);
+ }
+ 
+ .swiper-pagination-bullet-active {
+     background: #FF6636;
+ }

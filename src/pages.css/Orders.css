@@ -1,0 +1,17 @@
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}

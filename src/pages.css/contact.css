@@ -1,0 +1,35 @@
+                .card-small {
+                    bottom: 20px;
+                    left: 10%;
+                    width: 82%;
+                    transition: 0.5s;
+                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+                }
+                
+                .card-img {
+                    height: 80%;
+                    transition: 0.5s;
+                }
+                
+                .card-img:hover .card-small {
+                    bottom: 60px;
+                    left: 30px;
+                    width: 82%;
+                }
+                
+                .card-img:hover {
+                    filter: grayscale(100%);
+                }
+                
+                .section-form {
+                    background: #F5F7FA;
+                }
+                
+                @media (max-width: 1200px) {
+                    .card-img {
+                        height: 100%;
+                    }
+                    .section-form {
+                        background: white;
+                    }
+                }

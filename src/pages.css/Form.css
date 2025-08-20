@@ -1,0 +1,35 @@
+            .form-container {
+                --bs-primary: #FF6636;
+                --bs-primary-rgb: 40, 167, 69;
+            }
+            
+            .card-header {
+                /* background-color: #FF6636!important; */
+                color: black;
+            }
+            
+            .btn-primary {
+                background-color: #FF6636;
+                border-color: #FF6636;
+            }
+            
+            .btn-primary:hover {
+                background-color: #FF6636;
+                border: 3px solid #FF6636;
+                /* color: white; */
+            }
+            
+            .form-control:focus {
+                border-color: #FF6636;
+                box-shadow: 0 0 0 0.25rem #FF6636;
+            }
+            
+            .card {
+                border-color: #FF6636;
+            }
+            
+            .eyeform {
+                inset-inline-start: 90%;
+                bottom: 10%;
+                font-size: 20px;
+            }
