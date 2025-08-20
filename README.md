@@ -1,12 +1,48 @@
-# React + Vite
+Articles Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 Live Demo: [https://website-articles-klz9.vercel.app/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+A React-based web application for browsing and publishing articles. Only logged-in users can access and manage articles. Built using modern React tools and libraries.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+ Features
+
+- 🧾 Public homepage with limited access
+- 🔐 User authentication (only logged-in users can view articles)
+- 📝 Create, edit, and publish articles
+- 📱 Responsive UI with Bootstrap
+- 🔀 Routing with React Router
+- 🧠 SEO metadata with React Helmet
+- 🎨 Icons with React Icons
+- 🎞 Sliders with React Swiper
+- 🌐 API integration for article management
+
+---
+
+ Technologies Used
+
+- React
+- Bootstrap
+- React Router
+- React Helmet
+- React Icons
+- React Swiper
+- Vite (as build tool)
+-  external API
+
+---
+
+This is a demo project. You can use the following credentials to log in and browse the articles:
+
+Username: mohamed-alkhatib  
+Password: 123456
+
+# Run the app locally
+
+
+
+
+npm run dev
